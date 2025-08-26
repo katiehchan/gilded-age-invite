@@ -12,6 +12,8 @@
       node.textContent += text[i];
       await sleep(speed);
     }
+    // Remove the typewriter class to stop the blinking cursor
+    node.classList.remove('typewriter');
   }
 
   function renderDetails() {
